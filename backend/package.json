@@ -1,7 +1,7 @@
 {
-  "name": "sms_app",
+  "name": "welch_development",
   "version": "1.0.0",
-  "description": "Send texts",
+  "description": "Welch Development",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
