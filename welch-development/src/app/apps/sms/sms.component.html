@@ -1,0 +1,53 @@
+<div class="container" style="background-color: white">
+  <div id="cover-spin" [hidden]="!showSpinner"></div>
+
+  <div class="row justify-content-center" style="min-height: 700px;">
+    <div class="col-sm-12 col-lg-8">
+      <br>
+      <h2 class="text-center"><i class="fas fa-sms fa-2x" style="color: #007ced"></i> Messages</h2>
+      <br>
+      <div class="form-group">
+        <label>To:</label>
+        <div class="d-table-cell w-100">
+          <input type="text" class="form-control numbers" [(ngModel)]="numberInput" (keyup.enter)="addNumber()">
+        </div>
+        <div class="d-table-cell align-middle">
+          <button class="btn btn-primary numbers" (click)="addNumber()">+</button>
+        </div>
+        <small class="form-text text-muted" style="padding-top: 0">You can add more numbers by clicking the + button.</small>
+      </div>
+
+      <ol>
+        <li *ngFor="let number of numbers; let i = index">
+          {{ number.formatted }} <i class="fas fa-times" style="color: #9f0b0b; cursor: pointer; margin-left: 15px;" (click)="removeNumber(i)"></i>
+        </li>
+      </ol>
+
+      <div class="form-group">
+        <label for="msg">Message</label>
+        <textarea rows="3" class="form-control" id="msg" [(ngModel)]="message"></textarea>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-lg-6">
+          <div class="form-group" [ngClass]="timeCheckbox ? 'd-block' : 'd-none'">
+            <input class="form-control " type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col">
+          <div class="text-center">
+            <button type="button" id="button" value="Send Text" class="btn btn-success submitBtn" style="cursor: pointer" (click)="postMessage()">Send</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="response"></div>
+    </div>
+  </div>
+</div>
