@@ -1,0 +1,35 @@
+[
+  {
+    "title": "vallen.com",
+    "description": "Vallen.com is one of the applications I work on for my job. Most of the tools for this site exist for our logged in customers. We offer buying approval workflow, inventory checks and an array of proprietary features.",
+    "image": "assets/img/vallen_screenshot.png",
+    "link_type": "external",
+    "path": "https://vallen.com",
+    "techCol1": [
+      "AngularJS",
+      "Bootstrap",
+      "Symfony"
+    ],
+    "techCol2": [
+      "SQL",
+      "MongoDB",
+      "PHP"
+    ]
+  },
+  {
+    "title": "SMS App",
+    "description": "This is a simple application that sends SMS messages from a unique phone number. It demonstrates business notification uses.",
+    "image": "assets/img/sms_app.png",
+    "link_type": "internal",
+    "path": "/apps/sms",
+    "techCol1": [
+      "Angular",
+      "Bootstrap",
+      "SASS"
+    ],
+    "techCol2": [
+      "NodeJs",
+      "Express"
+    ]
+  }
+]
