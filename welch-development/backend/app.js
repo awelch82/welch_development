@@ -3,6 +3,8 @@ const path = require("path");
 const smsRoutes = require("./routes/sms");
 const datatableRoutes = require("./routes/datatable");
 var bodyParser = require('body-parser');
+require('dotenv').config();
+
 
 
 
@@ -21,7 +23,7 @@ app.use(bodyParser.json());
 
 app.use("/", express.static(path.join(__dirname, "dist")));
 app.use('/api/sms', smsRoutes);
-app.use('/api/datatableRoutes', smsRoutes);
+app.use('/api/datatableRoutes', datatableRoutes);
 
 
 

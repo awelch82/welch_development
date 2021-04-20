@@ -111,7 +111,7 @@
                 portfolio_grid = $('#' + portfolio_grid_container_id + ' .portfolio-grid'),
                 portfolio_filter = $('#' + portfolio_grid_container_id + ' .portfolio-filters'),
                 portfolio_filter_item = $('#' + portfolio_grid_container_id + ' .portfolio-filters .filter');
-                
+
             if (portfolio_grid) {
 
                 portfolio_grid.shuffle({
@@ -254,6 +254,11 @@
             $('.site-nav').addClass('animate');
             $('.site-nav').toggleClass('mobile-menu-hide');
         });
+
+      $('.toggleMenu').on("click", function () {
+        $('.site-nav').addClass('animate');
+        $('.site-nav').toggleClass('mobile-menu-hide');
+      });
 
         // Text rotation
         $('.text-rotation').owlCarousel({
@@ -422,7 +427,7 @@
             }, 400);
             return false;
         });
-        
+
         //Google Maps
         $("#map").googleMap({
             zoom: 16 // Google Map ZOOM. You can change this value

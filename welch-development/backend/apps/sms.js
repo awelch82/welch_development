@@ -1,7 +1,7 @@
-const accountSid = 'AC47330016f2b6e2bfd4d6e71c57e0ee6c';
-const authToken = '96a6d32d6714e764ba6d16bd3ee273eb';
+require('dotenv').config();
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
-
 
 exports.sendMessage = (req, res, next) => {
   req.body.numbers.forEach((number) => {
