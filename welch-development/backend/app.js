@@ -1,7 +1,9 @@
 const express = require('express');
 const path = require("path");
 const smsRoutes = require("./routes/sms");
+const datatableRoutes = require("./routes/datatable");
 var bodyParser = require('body-parser');
+
 
 
 const app = express();
@@ -19,6 +21,7 @@ app.use(bodyParser.json());
 
 app.use("/", express.static(path.join(__dirname, "dist")));
 app.use('/api/sms', smsRoutes);
+app.use('/api/datatableRoutes', smsRoutes);
 
 
 

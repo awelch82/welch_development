@@ -11,6 +11,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SmsComponent } from './apps/sms/sms.component';
 import { FormsModule } from '@angular/forms';
+import { DatatableComponent } from './apps/datatable/datatable.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 
 @NgModule({
@@ -21,13 +23,15 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     AppsComponent,
     ResumeComponent,
-    SmsComponent
+    SmsComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxDatatableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

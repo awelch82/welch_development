@@ -19,7 +19,7 @@ export class SmsComponent implements OnInit {
   showSpinner = false;
 
   ngOnInit(): void {
-    this.getPosts();
+
   }
 
   addNumber() {
@@ -54,18 +54,6 @@ export class SmsComponent implements OnInit {
         this.numberInput = '';
       }
     }
-  }
-
-
-  getPosts(): void {
-    const queryParams = `?test=SOME3THING`;
-    this.http
-      .get(
-        BACKEND_URL + queryParams
-      )
-      .subscribe(transformedPostData => {
-        console.log(transformedPostData);
-      });
   }
 
   httpOptions = {
