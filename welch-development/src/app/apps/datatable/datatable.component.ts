@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+
 
 @Component({
   selector: 'app-datatable',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatatableComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   rows = [];
 
@@ -29,4 +31,9 @@ export class DatatableComponent implements OnInit {
     req.send();
   }
 
+  const queryParams =
+
+  getCustomers() {
+
+  }
 }

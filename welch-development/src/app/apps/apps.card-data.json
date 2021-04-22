@@ -31,5 +31,21 @@
       "NodeJs",
       "Express"
     ]
+  },
+  {
+    "title": "Datatable",
+    "description": "This is a simple application that sends SMS messages from a unique phone number. It demonstrates business notification uses.",
+    "image": "assets/img/sms_app.png",
+    "link_type": "internal",
+    "path": "/apps/datatable",
+    "techCol1": [
+      "Angular",
+      "Bootstrap",
+      "SASS"
+    ],
+    "techCol2": [
+      "NodeJs",
+      "Express"
+    ]
   }
 ]
